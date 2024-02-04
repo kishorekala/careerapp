@@ -27,17 +27,16 @@
         <br> This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information</h1>
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         
-        <h2 class="text-center mx-auto pb-2"> Job Openings</h2>
+        <h2 class="container text-center mx-auto pb-2"> Job Openings</h2>
            <div class="text-left mx-auto" >
                {% for job in jobs %}
                 {% include 'jobitem.html' %}
                {% endfor %}
             </div>
-        
-         <div class="text-center">
-              <button type="button" class="btn btn-primary btn-lg ">Contact Us</button>
-              <p>&copy; Copy right  Kishore 2024</p><p>Move  <a href="#">To Top</a></p>
-         </div>
-      </div>
+
+
+    </div>
+    <div class="text-center">
+       {% include 'footer.html' %}
+    </div>
     </body>
-  
